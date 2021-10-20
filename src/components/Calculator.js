@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 import React from 'react';
 import './Calculator.css';
 
@@ -9,6 +9,10 @@ const Button = (props) => {
       {buttonName}
     </button>
   );
+};
+
+Button.propTypes = {
+  buttonName: PropTypes.string,
 };
 
 class Calculator extends React.Component {
