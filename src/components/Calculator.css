@@ -1,15 +1,23 @@
 #calculator {
-  width: 200px;
-  height: 400px;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
 }
 
 #calc-buttons {
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
 
 #display-calc {
-  height: 36px;
+  font-size: 125%;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20%;
   width: 100%;
   background-color: grey;
   text-align: right;
@@ -20,6 +28,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
 }
 
 button:nth-child(4) {
@@ -30,7 +39,6 @@ button:nth-child(4) {
   border-radius: 0;
   border: 0.01px solid #909090;
   height: 100%;
-
   margin: 0;
   padding: 8px 0;
   flex-grow: 1;
