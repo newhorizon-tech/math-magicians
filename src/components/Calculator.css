@@ -1,7 +1,6 @@
 #calculator {
-  background: green;
   width: 200px;
-  height: 200px;
+  height: 400px;
 }
 
 #calc-buttons {
@@ -23,7 +22,16 @@
   width: 100%;
 }
 
+button:nth-child(4) {
+  background-color: #fb853b;
+}
+
 #calc-buttons button {
+  border-radius: 0;
+  border: 0.01px solid #909090;
+  height: 100%;
+
+  margin: 0;
   padding: 8px 0;
   flex-grow: 1;
   width: 25%;
@@ -31,4 +39,8 @@
 
 #calc-buttons .double-button {
   width: 50%;
+}
+
+#calc-buttons .double-button + button + button {
+  background-color: #fb853b;
 }

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import React from 'react';
 import './Calculator.css';
 
@@ -12,7 +12,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  buttonName: PropTypes.string,
+  buttonName: PropTypes.string.isRequired,
 };
 
 class Calculator extends React.Component {
