@@ -1,0 +1,34 @@
+#calculator {
+  background: green;
+  width: 200px;
+  height: 200px;
+}
+
+#calc-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#display-calc {
+  height: 36px;
+  width: 100%;
+  background-color: grey;
+  text-align: right;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#calc-buttons button {
+  padding: 8px 0;
+  flex-grow: 1;
+  width: 25%;
+}
+
+#calc-buttons .double-button {
+  width: 50%;
+}
