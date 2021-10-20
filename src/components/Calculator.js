@@ -1,4 +1,15 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
+import './Calculator.css';
+
+const Button = (props) => {
+  const { buttonName } = props;
+  return (
+    <button type="button">
+      {buttonName}
+    </button>
+  );
+};
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -8,17 +19,53 @@ class Calculator extends React.Component {
 
   render() {
     const { value } = this.state;
-
+    const buttons = [
+      ['AC', '+/-', '%', '/'],
+      ['7', '8', '9', 'X'],
+      ['4', '5', '6', '-'],
+      ['1', '2', '3', '+'],
+    ];
     return (
       <div id="calculator">
-        <h1>
-          Calculator
-        </h1>
-
-        <h2>
+        <div id="display-calc">
           {value}
-        </h2>
+        </div>
+
+        <div id="calc-buttons">
+          <div className="row">
+            {buttons[0].map((name) => (
+              <Button key={name} buttonName={name} />
+            ))}
+          </div>
+
+          <div className="row">
+            {buttons[1].map((name) => (
+              <Button key={name} buttonName={name} />
+            ))}
+          </div>
+
+          <div className="row">
+            {buttons[2].map((name) => (
+              <Button key={name} buttonName={name} />
+            ))}
+          </div>
+
+          <div className="row">
+            {buttons[3].map((name) => (
+              <Button key={name} buttonName={name} />
+            ))}
+          </div>
+
+          <div className="row">
+            <button type="button" buttonName="0" className="double-button"> 0 </button>
+            <Button buttonName="." />
+            <Button buttonName="=" />
+
+          </div>
+
+        </div>
       </div>
+
     );
   }
 }
