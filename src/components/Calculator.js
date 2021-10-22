@@ -17,7 +17,7 @@ class Calculator extends Component {
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next } = this.state;
     const buttons = [
       ['AC', '+/-', '%', '/'],
       ['7', '8', '9', 'x'],
@@ -28,7 +28,7 @@ class Calculator extends Component {
     return (
       <div id="calculator">
         <div id="display-calc">
-          {total}
+          {(next == null) ? total : next}
         </div>
 
         <div id="calc-buttons">
