@@ -8,12 +8,6 @@ const Calculator = () => {
   const [calcObj, setCalcObj] = useState({});
   const { next, total } = calcObj;
 
-  const handleCalc = (e) => {
-    const buttonName = e.target.textContent;
-    const newState = calculate(calcObj, buttonName);
-    setCalcObj(Object.assign(newState));
-  };
-
   const buttons = [
     ['AC', '+/-', '%', '/'],
     ['7', '8', '9', 'x'],
@@ -21,6 +15,12 @@ const Calculator = () => {
     ['1', '2', '3', '+'],
     ['0', '.', '='],
   ];
+
+  const handleCalc = (e) => {
+    const buttonName = e.target.textContent;
+    const newState = calculate(calcObj, buttonName);
+    setCalcObj(Object.assign(newState));
+  };
 
   return (
     <div id="calculator">
