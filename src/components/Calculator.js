@@ -8,9 +8,10 @@ class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = { };
+    this.handleCalc = this.handleCalc.bind(this);
   }
 
-  handleCalc = (e) => {
+  handleCalc(e) {
     const buttonName = e.target.textContent;
     const newState = calculate(this.state, buttonName);
     this.setState(Object.assign(newState));
