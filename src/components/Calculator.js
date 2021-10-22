@@ -6,7 +6,7 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [calcObj, setCalcObj] = useState({});
-  const { total } = calcObj;
+  const { next, total } = calcObj;
 
   const handleCalc = (e) => {
     const buttonName = e.target.textContent;
@@ -25,7 +25,7 @@ const Calculator = () => {
   return (
     <div id="calculator">
       <div id="display-calc">
-        {total}
+        {(next == null) ? total : next}
       </div>
 
       <div id="calc-buttons">
