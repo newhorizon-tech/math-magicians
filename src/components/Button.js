@@ -8,12 +8,12 @@ class Button extends Component {
   }
 
   render() {
-    const { buttonName } = this.props;
+    const { buttonName, handleCalc } = this.props;
 
     const buttonStyle = buttonName === '0' ? 'double-button' : 'single-button';
 
     return (
-      <button type="button" className={buttonStyle}>
+      <button type="button" className={buttonStyle} onClick={handleCalc()}>
         {buttonName}
       </button>
     );
@@ -22,6 +22,7 @@ class Button extends Component {
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
+  handleCalc: PropTypes.func.isRequired,
 };
 
 export default Button;

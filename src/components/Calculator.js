@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 import './Calculator.css';
 
+import calculate from '../logic/calculate';
+
 const Row = (props) => {
-  const { rowButtons } = props;
+  const { rowButtons, handleCalc } = props;
   return (
     <div className="row">
       {rowButtons.map((name) => (
-        <Button key={name} buttonName={name} />
+        <Button key={name} buttonName={name} handleCalc={handleCalc} />
       ))}
     </div>
   );
@@ -16,19 +18,26 @@ const Row = (props) => {
 
 Row.propTypes = {
   rowButtons: PropTypes.arrayOf(PropTypes.string).isRequired,
+  handleCalc: PropTypes.func.isRequired,
 };
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = { final: 0 };
+    this.state = { };
+  }
+
+  handleCalc = (e) => {
+    const buttonName = e.target.textContent;
+    const newState = calculate(this.state, buttonName);
+    this.setState(Object.assign(newState));
   }
 
   render() {
-    const { final } = this.state;
+    const { total } = this.state;
     const buttons = [
       ['AC', '+/-', '%', '/'],
-      ['7', '8', '9', 'X'],
+      ['7', '8', '9', 'x'],
       ['4', '5', '6', '-'],
       ['1', '2', '3', '+'],
       ['0', '.', '='],
@@ -36,12 +45,12 @@ class Calculator extends Component {
     return (
       <div id="calculator">
         <div id="display-calc">
-          {final}
+          {total}
         </div>
 
         <div id="calc-buttons">
           {buttons.map((row) => (
-            <Row key={row} rowButtons={row} />
+            <Row key={row} rowButtons={row} handleCalc={() => this.handleCalc} />
           ))}
         </div>
       </div>
