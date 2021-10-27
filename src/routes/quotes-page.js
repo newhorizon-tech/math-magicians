@@ -7,7 +7,10 @@ const QuotesPage = () => (
       Nature is actualized the ideal of mathematical simplicity.
       It is my conviction that pure mathematical construction enables
       us to discover the concepts and the laws connecting them, which
-      gives us the key to understanding nature.In a certain sense, therefore,
+      gives us the key to understanding nature.
+      <br />
+      <br />
+      In a certain sense, therefore,
       I hold it true that pure thought can grasp reality, as the ancients dreamed.
     </blockquote>
     <figcaption>

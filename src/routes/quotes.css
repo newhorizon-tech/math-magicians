@@ -8,3 +8,7 @@
 .quote blockquote {
   margin: 1em;
 }
+
+.quote figcaption {
+  text-align: right;
+}
