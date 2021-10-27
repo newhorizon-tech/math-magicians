@@ -1,10 +1,10 @@
 import Calculator from '../components/Calculator';
 
 const CalculatorPage = () => (
-  <div>
-    <h1>
-      Calculator Page
-    </h1>
+  <div className="page-content calculator">
+    <h2>
+      Lets do some Math!
+    </h2>
     <Calculator />
   </div>
 
