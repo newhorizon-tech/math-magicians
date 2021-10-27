@@ -1,0 +1,14 @@
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links > * {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 0 30px;
+}

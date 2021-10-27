@@ -3,7 +3,9 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
+  Link,
 } from 'react-router-dom';
+import './App.css';
 
 import HomePage from './routes/home-page';
 import QuotePage from './routes/quotes-page';
@@ -11,13 +13,20 @@ import CalculatorPage from './routes/calculator-page';
 
 const App = () => (
   <div className="App">
-    <header>
-      <h1>
-        Math Magicians
-      </h1>
-    </header>
-
     <Router>
+      <header>
+        <nav>
+          <h1>
+            Math Magicians
+          </h1>
+          <div className="nav-links">
+            <Link to="/"> Home </Link>
+            <Link to="/calculator"> Calculator  </Link>
+            <Link to="/quotes">Quote</Link>
+          </div>
+        </nav>
+      </header>
+
       <Switch>
         <Route path="/quotes">
           <QuotePage />
@@ -31,6 +40,7 @@ const App = () => (
           <HomePage />
         </Route>
       </Switch>
+
     </Router>
   </div>
 );
