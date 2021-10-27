@@ -1,22 +1,24 @@
 import React from 'react';
-import Calculator from './components/Calculator';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
+import QuotePage from './routes/quotes-page';
+// import HomePage from './routes/home-page';
+// import CalculatorPage from './routes/calculator-page';
 
-  render() {
-    return (
-      <div className="App">
-        <header>
-          <h1> Math Magicians </h1>
-        </header>
-        <Calculator />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <header>
+      <h1>
+        Math Magicians
+      </h1>
+    </header>
+
+    <Router>
+      <Route path="/quotes">
+        <QuotePage />
+      </Route>
+    </Router>
+  </div>
+);
 
 export default App;
