@@ -1,5 +1,5 @@
 const HomePage = () => (
-  <article>
+  <article className="page-content">
     <h3>
       Welcome to our page!
     </h3>
