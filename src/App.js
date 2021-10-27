@@ -1,5 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
 
 import HomePage from './routes/home-page';
 import QuotePage from './routes/quotes-page';
@@ -14,18 +18,19 @@ const App = () => (
     </header>
 
     <Router>
-      <Route path="/">
-        <HomePage />
-      </Route>
+      <Switch>
+        <Route path="/quotes">
+          <QuotePage />
+        </Route>
 
-      <Route path="/quotes">
-        <QuotePage />
-      </Route>
+        <Route path="/calculator">
+          <CalculatorPage />
+        </Route>
 
-      <Route path="/calculator">
-        <CalculatorPage />
-      </Route>
-
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
     </Router>
   </div>
 );
