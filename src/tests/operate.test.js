@@ -84,3 +84,12 @@ describe('Modulus', () => {
     expect(result).toBe('5');
   });
 });
+
+describe('Invalid operations ', () => {
+  test('Invalid operation @', () => {
+    expect(() => { operate(11, 3, '@'); }).toThrow("Unknown operation '@'");
+  });
+  test('Invalid operation #', () => {
+    expect(() => { operate(11, 3, '#'); }).toThrow("Unknown operation '#'");
+  });
+});
