@@ -5,7 +5,7 @@ Math Magicians is a Single Page Application built in React for Math fans
 ## Features
 
 - Make Simple Calculations
-- Read a random math-related quote
+- Display a math-related quote
 
 ## Built With
 
@@ -38,7 +38,10 @@ Feel free to check the [issues page](https://github.com/newhorizon-tech/leaderbo
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgement
+
+Text on the homepage is from the [Encyclopedia Britannica article, "mathematics"](https://www.britannica.com/science/mathematics)
 
 ## License
 
-GNU General Public License, version 3 (GPL-3.0)
+The source code is licensed under GNU General Public License, version 3 (GPL-3.0)
