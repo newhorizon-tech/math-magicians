@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots renders CalculatorPage correctly 1`] = `
+<div
+  className="page-content calculator"
+>
+  <h2>
+    Lets do some Math!
+  </h2>
+  <div
+    id="calculator"
+  >
+    <div
+      id="display-calc"
+    />
+    <div
+      id="calc-buttons"
+    >
+      <div
+        className="row"
+      >
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div
+        className="row"
+      >
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          x
+        </button>
+      </div>
+      <div
+        className="row"
+      >
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="row"
+      >
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div
+        className="row"
+      >
+        <button
+          className="double-button"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="single-button"
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshots renders HomePage correctly 1`] = `
+<article
+  className="page-content"
+>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p>
+    Mathematics is the science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation, and its development has involved an increasing degree of idealization and abstraction of its subject matter.Since the 17th century, mathematics has been an indispensable adjunct to the physical sciences and technology, and in more recent times it has assumed a similar role in the quantitative aspects of the life sciences.
+  </p>
+  <p>
+    In many cultures — under the stimulus of the needs of practical pursuits, such as commerce and agriculture — mathematics has developed far beyond basic counting. This growth has been greatest in societies complex enough to sustain these activities and to provide leisure for contemplation and the opportunity to build on the achievements of earlier mathematicians.
+  </p>
+</article>
+`;
+
+exports[`Snapshots renders QuotesPage correctly 1`] = `
+<figure
+  className="quote page-content"
+>
+  <blockquote>
+    Our experience up to date justifies us in feeling sure that in Nature is actualized the ideal of mathematical simplicity. It is my conviction that pure mathematical construction enables us to discover the concepts and the laws connecting them, which gives us the key to understanding nature.
+    <br />
+    <br />
+    In a certain sense, therefore, I hold it true that pure thought can grasp reality, as the ancients dreamed.
+  </blockquote>
+  <figcaption>
+    — Albert Einstein
+  </figcaption>
+</figure>
+`;
