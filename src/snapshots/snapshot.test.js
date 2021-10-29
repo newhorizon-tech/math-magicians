@@ -4,7 +4,6 @@ import HomePage from '../routes/home-page';
 import CalculatorPage from '../routes/calculator-page';
 import QuotesPage from '../routes/quotes-page';
 
-
 describe(('Snapshots'), () => {
   it('renders HomePage correctly', () => {
     const tree = renderer
@@ -26,5 +25,4 @@ describe(('Snapshots'), () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });
