@@ -9,8 +9,8 @@ Math Magicians is a Single Page Application built in React for Math fans
 
 ## Live Demo
 
-- [Netlify]() 
-- [Heroku]()  
+- [Netlify](https://hardcore-kepler-8092d7.netlify.app) 
+- [Heroku](https://math-magicians-123.herokuapp.com)  
 
 ## Built With
 
