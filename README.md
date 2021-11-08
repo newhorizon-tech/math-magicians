@@ -7,6 +7,11 @@ Math Magicians is a Single Page Application built in React for Math fans
 - Make Simple Calculations
 - Display a math-related quote
 
+## Live Demo
+
+- [Netlify](https://hardcore-kepler-8092d7.netlify.app) 
+- [Heroku](https://math-magicians-123.herokuapp.com)  
+
 ## Built With
 
 - Javascript (ES6)
