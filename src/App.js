@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
+import ApiPage from './routes/api-page';
 import HomePage from './routes/home-page';
 import QuotePage from './routes/quotes-page';
 import CalculatorPage from './routes/calculator-page';
@@ -28,6 +29,10 @@ const App = () => (
       </header>
 
       <Switch>
+        <Route path="/api">
+          <ApiPage />
+        </Route>
+
         <Route path="/quotes">
           <QuotePage />
         </Route>
