@@ -7,10 +7,10 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
-import ApiPage from './routes/api-page';
 import HomePage from './routes/home-page';
 import QuotePage from './routes/quotes-page';
 import CalculatorPage from './routes/calculator-page';
+import ExpressionCalculator from './components/ExpressionCalculator';
 
 const App = () => (
   <div className="App">
@@ -24,15 +24,15 @@ const App = () => (
             <Link to="/"> Home </Link>
             <Link to="/calculator"> Calculator  </Link>
             <Link to="/quotes">Quote</Link>
-            <Link to="/api">Advanced Calculator</Link>
+            <Link to="/expression">Expression calculator</Link>
 
           </div>
         </nav>
       </header>
 
       <Switch>
-        <Route path="/api">
-          <ApiPage />
+        <Route path="/expression">
+          <ExpressionCalculator />
         </Route>
 
         <Route path="/quotes">

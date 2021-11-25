@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-const ApiPage = () => {
+const ExpressionCalculator = () => {
   const [result, setResult] = useState({});
 
   const handleData = async (exp) => {
     const response = await fetch(`http://api.mathjs.org/v4/?expr=${encodeURIComponent(exp)}`);
-    console.log(response);
     if (response.status === 200) {
       const apiResult = await response.json();
       setResult((prevState) => ({ ...prevState, value: apiResult }));
@@ -24,7 +23,7 @@ const ApiPage = () => {
 
   return (
     <div>
-      <h1> API </h1>
+      <h1> Expression calculator </h1>
       <form onSubmit={(e) => handleSubmit(e)}>
         <input id="expression" placeholder="Enter math expression" />
         <button type="submit"> Calculate </button>
@@ -35,4 +34,5 @@ const ApiPage = () => {
     </div>
   );
 };
-export default ApiPage;
+
+export default ExpressionCalculator;
