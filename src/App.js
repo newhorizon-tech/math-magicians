@@ -24,6 +24,8 @@ const App = () => (
             <Link to="/"> Home </Link>
             <Link to="/calculator"> Calculator  </Link>
             <Link to="/quotes">Quote</Link>
+            <Link to="/api">Advanced Calculator</Link>
+
           </div>
         </nav>
       </header>
