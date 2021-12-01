@@ -2,7 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   Link,
 } from 'react-router-dom';
 import './App.css';
@@ -27,20 +27,11 @@ const App = () => (
         </nav>
       </header>
 
-      <Switch>
-        <Route path="/quotes">
-          <QuotePage />
-        </Route>
-
-        <Route path="/calculator">
-          <CalculatorPage />
-        </Route>
-
-        <Route path="/">
-          <HomePage />
-        </Route>
-      </Switch>
-
+      <Routes>
+        <Route path="/quotes" element={<QuotePage />} />
+        <Route path="/calculator" element={<CalculatorPage />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </Router>
   </div>
 );
