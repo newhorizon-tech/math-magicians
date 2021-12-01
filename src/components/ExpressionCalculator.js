@@ -24,6 +24,7 @@ const ExpressionCalculator = () => {
   return (
     <div>
       <h1> Expression calculator </h1>
+      <p> Examples: 2+sqrt(25)+sqrt(100) </p>
       <form onSubmit={(e) => handleSubmit(e)}>
         <input id="expression" placeholder="Enter math expression" />
         <button type="submit"> Calculate </button>
